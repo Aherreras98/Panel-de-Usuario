@@ -16,6 +16,16 @@
     --success-color: #5cb85c;
 }
 
+[data-theme="dark"] {
+    --bg-color: #333;
+    --font-color: #f4f4f4;
+    --card-bg: #444;
+    --border-color: #555;
+    --btn-bg: #555;
+    --btn-hover-bg: #666;
+    --link-color: #58a6ff;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: var(--bg-color);

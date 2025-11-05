@@ -38,7 +38,6 @@ const initLogin = () => {
 };
 
 export const initAuth = () => {
-    console.log("Módulo de autenticación listo.");
 
     const gotoRegisterLink = document.getElementById('goto-register');
     const gotoLoginLink = document.getElementById('goto-login');

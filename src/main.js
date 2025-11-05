@@ -4,7 +4,6 @@ import { initCookieBanner } from './modules/cookieBanner.js';
 import { initPanel } from './modules/panel.js';
 
 function initApp() {
-    console.log("App iniciada...");
     
     initAuth(); 
     initThemeToggle();

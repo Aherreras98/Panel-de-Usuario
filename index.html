@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="src/main.js" type="module" defer></script>
 </head>
+
 <body>
 
     <main id="screen-login" class="screen">
@@ -29,13 +31,13 @@
     <main id="screen-register" class="screen hidden">
         <form class="form-container" id="register-form">
             <h2>Registro</h2>
-            
+
             <div class="input-group">
                 <label for="reg-username">Nombre de usuario</label>
                 <input type="text" id="reg-username" required>
                 <p id="error-username" class="error-message"></p>
             </div>
-            
+
             <div class="input-group password-wrapper">
                 <label for="reg-password">Contraseña</label>
                 <input type="password" id="reg-password" required>
@@ -65,7 +67,7 @@
                 <input type="number" id="reg-age">
                 <p id="error-age" class="error-message"></p>
             </div>
-            
+
             <button type="submit" id="register-btn" class="btn" disabled>Crear cuenta</button>
             <p id="register-success" class="success-message"></p>
             <p>¿Ya tienes cuenta? <a href="#" id="goto-login">Inicia sesión</a></p>
@@ -84,8 +86,12 @@
 
     <div id="cookie-banner" class="cookie-banner hidden">
         <p>Usamos cookies para recordar tus preferencias. ¿Aceptas?</p>
-        <button id="accept-cookies-btn" class="btn">Aceptar</button>
+        <div class="cookie-buttons">
+            <button id="reject-cookies-btn" class="btn">Rechazar</button>
+            <button id="accept-cookies-btn" class="btn">Aceptar</button>
+        </div>
     </div>
 
 </body>
+
 </html>
